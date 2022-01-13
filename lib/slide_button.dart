@@ -148,8 +148,8 @@ class _SlideButtonState extends State<SlideButton>
           Align(
             alignment: Alignment(-1.0, 0.0),
             child: GestureDetector(
-              onVerticalDragUpdate: widget.isDraggable ? _onDrag : null,
-              onVerticalDragEnd: widget.isDraggable ? _onDragEnd : null,
+              onHorizontalDragUpdate: widget.isDraggable ? _onDrag : null,
+              onHorizontalDragEnd: widget.isDraggable ? _onDragEnd : null,
               child: Container(
                 height: widget.height,
                 child: Align(
